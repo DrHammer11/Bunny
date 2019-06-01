@@ -17,10 +17,10 @@
         </main>
         <script>
             var password = ""
-            var secretPassword = "Grandpa is cool"
-            while (password === !secretPassword) {
-                password = prompt("What is the secret grandpa password?");
-                if (password === !secretPassword) {
+            var secretPassword = "grandpa is cool"
+            while (password !== secretPassword) {
+                password = prompt("What is the secret grandpa password?").toLowerCase();
+                if (password !== secretPassword) {
                     alert("INCORRECT");
                 }
             }
