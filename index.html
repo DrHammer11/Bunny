@@ -20,18 +20,18 @@
             var secretPassword = "grandpa is cool"
             while (password !== secretPassword && (password === "" || password === null)) {
                 password = prompt("What is the secret grandpa password?").toLowerCase();
-                if (password !== secretPassword) {
-                    alert("INCORRECT");
-                }
-                else if (password === "grandpa news") {
+                if (password === "grandpa news") {
                     alert("Welcome to grandpa news.");
                     break;
+                }
+                else if (password !== secretPassword) {
+                    alert("INCORRECT");
                 }
                 else {
                     alert("The password has been accepted by the grandpa police");
                 }
-            }
-            alert(password);
+                alert(password);
+            }    
         </script>
     </body>
 </html>
