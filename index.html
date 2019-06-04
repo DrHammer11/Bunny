@@ -18,11 +18,15 @@
         <script>
             var password = ""
             var secretPassword = "grandpa is cool"
-            while (password !== secretPassword && (password === "" || password === null)) {
+            while (password !== secretPassword) {
                 password = prompt("What is the secret grandpa password?").toLowerCase();
                 if (password === "grandpa news") {
                     alert("Welcome to grandpa news.");
                     break;
+                }
+                else if (password === "" || password === null) {
+                    alert("Nice try, but the grandpa police will not let you pass without a password.");
+                    continue;
                 }
                 else if (password !== secretPassword) {
                     alert("INCORRECT");
