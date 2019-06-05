@@ -28,13 +28,13 @@
             }
             if (password === "grandpa news") {
                 alert("Welcome to grandpa news.");
-                location.href = "https://drhammer11.github.io/Bunny/";
+                location.href = "https://drhammer11.github.io/News/";
                 break;
             }
             else if (password !== secretPassword && password !== null) {
                 alert("INCORRECT");
             }
-            else {
+            else if (password !== null) {
                 alert("The password has been accepted by the grandpa police");
             }
         } while (password !== secretPassword || password === null);
