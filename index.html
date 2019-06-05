@@ -31,6 +31,9 @@
                 location.href = "https://drhammer11.github.io/News/";
                 break;
             }
+            else if (password.split(0, 10) === "simon says") {
+                alert(password.split(0, 9));
+            }
             else if (password !== secretPassword && password !== null) {
                 alert("INCORRECT");
             }
