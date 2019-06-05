@@ -23,10 +23,10 @@
             if (password === null) {
                 alert("Nice try, but the grandpa police will not let you pass without a password.");
             }
-            else {
+            else if (password !== null) {
                 password = password.toLowerCase();
             }
-            if (password === "grandpa news") {
+            else if (password === "grandpa news") {
                 alert("Welcome to grandpa news.");
                 location.href = "https://drhammer11.github.io/News/";
                 break;
