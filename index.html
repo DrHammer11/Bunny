@@ -20,9 +20,11 @@
         var secretPassword = "grandpa is cool"
         do {
             password = prompt("What is the secret grandpa password?");
-            password = password.toLowerCase();
             if (password === null) {
                 alert("Nice try, but the grandpa police will not let you pass without a password.");
+            }
+            else {
+                password = password.toLowerCase();
             }
             if (password === "grandpa news") {
                 alert("Welcome to grandpa news.");
