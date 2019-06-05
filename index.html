@@ -22,11 +22,12 @@
             password = prompt("What is the secret grandpa password?");
             if (password === null) {
                 alert("Nice try, but the grandpa police will not let you pass without a password.");
+                continue;
             }
-            else if (password !== null) {
+            else {
                 password = password.toLowerCase();
             }
-            else if (password === "grandpa news") {
+            if (password === "grandpa news") {
                 alert("Welcome to grandpa news.");
                 location.href = "https://drhammer11.github.io/News/";
                 break;
