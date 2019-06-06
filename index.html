@@ -34,18 +34,18 @@
             }
             else if (password.slice(0, 10) === "simon says") {
                 var thing = password.slice(11);
+                var words = [];
+                var action = [];
                 if (thing.slice(0, 2) === 'do') {
-                    var words = [];
-                    var action = [];
                     words.push(thing.split(" "));
                     words[0] = 'does'
-                    words.push('*')
-                    words.unshift('*')
-                    for (w = 0; w < words.length-1; w++) {
-                        action.push(words[w]);
-                    }
-                    alert(action);
                 }
+                words.push('*')
+                words.unshift('*')
+                for (w = 0; w < words.length-1; w++) {
+                     action.push(words[w]);
+                }
+                alert(action);
             }
             else if (password !== secretPassword && password !== null) {
                 alert("INCORRECT");
