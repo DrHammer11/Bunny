@@ -39,7 +39,9 @@
         imgArray = ["IMG_0046.png","IMG_0047.png"]
         while (true) {
             for (i = 0; i < imgArray.length; i++) {
-                document.getElementById("newsFlash").src=imgArray[i];
+                setTimeout(function() {
+                    document.getElementById("newsFlash").src=imgArray[i];
+                }, 250);
             }
         }
         </script>
