@@ -43,12 +43,12 @@
                 else {
                     words[0] += "s"
                 }
-                words.push('*')
-                words.unshift('*')
-                alert(words);
                 for (w = 0; w < words.length; w++) {
                      action += (words[w]) + " ";
+                    alert(words[w])
                 }
+                alert = alert + '*'
+                alert = '*' + alert
                 alert(action);
             }
             else if (password !== secretPassword && password !== null) {
