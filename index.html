@@ -36,8 +36,15 @@
                 var thing = password.slice(11);
                 if (thing.slice(0, 2) === 'do') {
                     var words = [];
+                    var action = [];
                     words.push(thing.split(" "));
-                    alert(words);
+                    words[0] = 'does'
+                    words.push('*')
+                    words.unshift('*')
+                    for (w = 0; w < words.length-1; w++) {
+                        action.push(words[w]);
+                    }
+                    alert(action);
                 }
             }
             else if (password !== secretPassword && password !== null) {
