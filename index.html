@@ -37,13 +37,16 @@
             }
         } while (true);
         imgArray = ["IMG_0046.png","IMG_0047.png"]
-        while (true) {
-            for (i = 0; i < imgArray.length; i++) {
-                setTimeout(function() {
-                    document.getElementById("newsFlash").src=imgArray[i];
-                }, 250);
+        i = 0;
+        setInterval(function() {
+            document.getElementById("newsFlash").src=imgArray[i];
+            if (i === 0) {
+                i = i + 1
             }
-        }
+            else if (i === 1) {
+                i = i - 1
+            }
+        }, 250);
         </script>
     </body>
 </html>
