@@ -35,15 +35,16 @@
             else if (password.slice(0, 10) === "simon says") {
                 var thing = password.slice(11);
                 var words = [];
-                var action = [];
+                var action = "";
                 if (thing.slice(0, 2) === 'do') {
                     words.push(thing.split(" "));
                     words[0] = 'does'
                 }
                 words.push('*')
                 words.unshift('*')
+                alert(words);
                 for (w = 0; w < words.length-1; w++) {
-                     action.push(words[w]);
+                     action += (words[w]) + '';
                 }
                 alert(action);
             }
