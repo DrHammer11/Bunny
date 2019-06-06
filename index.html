@@ -32,25 +32,6 @@
                 location.href = "https://drhammer11.github.io/News/";
                 break;
             }
-            else if (password.slice(0, 10) === "simon says") {
-                var thing = password.slice(11);
-                var words = [];
-                var action = "";
-                words.push(thing.split(" "));
-                if (words[0] === 'do') {
-                    words[0] = 'does'
-                }
-                else {
-                    words[0] += "s"
-                }
-                for (w = 0; w < words.length; w++) {
-                     action += (words[w]) + " ";
-                     alert(words[w]);
-                }
-                alert = alert + '*'
-                alert = '*' + alert
-                alert(action);
-            }
             else if (password !== secretPassword && password !== null) {
                 alert("INCORRECT");
             }
