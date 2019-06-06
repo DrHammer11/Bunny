@@ -36,15 +36,18 @@
                 var thing = password.slice(11);
                 var words = [];
                 var action = "";
-                if (thing.slice(0, 2) === 'do') {
-                    words.push(thing.split(" "));
+                words.push(thing.split(" "));
+                if (words[0] === 'do') {
                     words[0] = 'does'
+                }
+                else {
+                    words[0] += "s"
                 }
                 words.push('*')
                 words.unshift('*')
                 alert(words);
-                for (w = 0; w < words.length-1; w++) {
-                     action += (words[w]) + '';
+                for (w = 0; w < words.length; w++) {
+                     action += (words[w]) + " ";
                 }
                 alert(action);
             }
